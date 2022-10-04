@@ -277,36 +277,24 @@ ul {
 }
 
 /* benefits */
-@media screen and (min-width: 780px) {
-  .benefits {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: 0px;
-    gap: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: 0px;
-    gap: 30px;
-  }
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0px;
+  gap: 30px;
 }
 
-.benefits__item {
-  width: 450px;
-}
 @media screen and (min-width: 780px) {
   .benefits__item {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -324,22 +312,6 @@ ul {
   border-radius: 4px;
   background-color: var(--team-background-color);
   margin-bottom: 30px;
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .benefits__box {
-    min-width: 290px;
-    max-width: 450px;
-  }
-}
-@media screen and (min-width: 780px) {
-  .benefits__box {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits__box {
-    width: 270px;
-  }
 }
 
 .benefits__title {
