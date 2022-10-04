@@ -71,11 +71,24 @@ ul {
 
 /* container */
 .container {
+  min-width: 320px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 1200px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+@media screen and (min-width: 780px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .container__header {
@@ -95,7 +108,17 @@ ul {
 
 /* section */
 .section {
-  padding: 94px 0;
+  padding: 60px 0 30px 0;
+}
+@media screen and (min-width: 780px) {
+  .section {
+    padding: 60px 0 30px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .section--no-padding-top {
@@ -254,16 +277,37 @@ ul {
 }
 
 /* benefits */
-.benefits {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 0px;
-  gap: 30px;
+@media screen and (min-width: 780px) {
+  .benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0px;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0px;
+    gap: 30px;
+  }
 }
 
 .benefits__item {
-  width: 270px;
+  width: 450px;
+}
+@media screen and (min-width: 780px) {
+  .benefits__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
 }
 
 .benefits__box {
@@ -276,11 +320,26 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: var(--team-background-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .benefits__box {
+    min-width: 290px;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .benefits__box {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__box {
+    width: 270px;
+  }
 }
 
 .benefits__title {
