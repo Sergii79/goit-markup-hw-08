@@ -1,7 +1,7 @@
 /* button */
 
 .button {
-    display: flex;
+    display: flex;    
     margin-left: auto;
     margin-right: auto;
     height: 50px;
@@ -26,6 +26,7 @@
 
 .button--width-footer {
     width: 200px;
+    margin: 0;    
 }
 
 .button--margin-footer-icon {

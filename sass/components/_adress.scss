@@ -6,19 +6,26 @@
 
 .adress__list {
     display: flex;
-    gap: 9px;
+    align-items: center;
+    gap: 8px;
     flex-direction: column;
     font-style: normal;
     list-style: none;   
+
+    // desktop - 1200px
+    @media screen and (min-width: 1200px) {      
+        align-items: flex-start;  
+        gap: 9px;
+    }
 }
 
-.adress__item {
+.adress__item {    
     height: 21px;
 
     // mobail - 480px
     @media screen and (min-width: 480px) {
-        display: flex;
-        justify-content: center;       
+        // display: flex;
+        // justify-content: center;       
     }
 
     // tablet - 768px
@@ -26,7 +33,8 @@
 
     // desktop - 1200px
     @media screen and (min-width: 1200px) {
-        justify-content: left;
+        // justify-content: left;
+        // display: block;
     }
 }
 

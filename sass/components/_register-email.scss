@@ -1,11 +1,25 @@
 /* register-email */
 
 .register-email {
-    margin-left: 93px;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+
+    // tablet - 768px
+    @media screen and (min-width: 780px) {
+        flex-grow: 1;
+    }
+
+    // desktop - 1200px
+    @media screen and (min-width: 1200px) {
+        display: block;
+        margin-left: 93px;        
+    }
 }
 
 .register-email__title {
-    display: block;
+    display: block;  
+    margin-top: 60px;  
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -13,17 +27,23 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
+
+    // desktop - 1200px
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+    }
 }
 
 .register-email__box {
     display: flex;
+    align-items: center;
+    flex-direction: column;
 
+    
     // mobail - 480px
     @media screen and (min-width: 480px) {       
         flex-direction: column;
-        justify-content: center;
-        // align-items: center;
-        
+        justify-content: center;        
     }
 
     // tablet - 768px
@@ -35,12 +55,17 @@
     }
 }
 
-.register-email__label {
-    margin-right: 12px;
+.register-email__label {   
+    margin-bottom: 20px;
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
 }
 
 .register-email__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid #FFFFFF4D;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -57,5 +82,9 @@
     
     &:focus {
         color: var(--secondary-text-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
     }
 }
