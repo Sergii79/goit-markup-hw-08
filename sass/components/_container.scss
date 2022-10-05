@@ -31,7 +31,23 @@
     display: flex;
 }
 
-.container__footer {
-    display: flex;
+.container__footer {    
     align-items: baseline;
+
+    // mobail - 480px
+    @media screen and (min-width: 480px) {
+        
+    }
+
+    // tablet - 768px
+    @media screen and (min-width: 780px) {
+        display: flex; 
+        flex-wrap: wrap;
+    }
+
+    // desktop - 1200px
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }

@@ -1,0 +1,18 @@
+// display-none mobail & tablet version
+
+.display-none-mob-tab {
+    display: none;
+
+    // desktop - 1200px
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.display-none-mob-tab--flex {
+
+    // desktop - 1200px
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
