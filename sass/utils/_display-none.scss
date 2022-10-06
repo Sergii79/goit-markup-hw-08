@@ -1,3 +1,19 @@
+// display-none mobail
+
+.display-none-mob {
+    display: none;
+
+    // tablet - 768px
+    @media screen and (min-width: 780px) {
+        display: block;
+    }
+
+    // desktop - 1200px
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
 // display-none mobail & tablet version
 
 .display-none-mob-tab {

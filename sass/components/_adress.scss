@@ -20,22 +20,7 @@
 }
 
 .adress__item {    
-    height: 21px;
-
-    // mobail - 480px
-    @media screen and (min-width: 480px) {
-        // display: flex;
-        // justify-content: center;       
-    }
-
-    // tablet - 768px
-    @media screen and (min-width: 780px) {}
-
-    // desktop - 1200px
-    @media screen and (min-width: 1200px) {
-        // justify-content: left;
-        // display: block;
-    }
+    height: 21px;     
 }
 
 .adress__link-light,
