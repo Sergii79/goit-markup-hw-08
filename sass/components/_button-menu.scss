@@ -1,10 +1,16 @@
 // button-menu
 
 .button-menu {
-    align-items: center;    
+    align-items: center;  
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0%;
+    margin-left: auto;
     cursor: pointer;
+    
 }
 
 .button-menu__icon {
-
+   
 }

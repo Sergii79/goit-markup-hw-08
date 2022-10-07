@@ -1,7 +1,8 @@
 /* overlay-menu */
 
 .overlay-menu {
-    // position: absolute;
+    position: relative;
+    overflow: hidden;
     // top: 0;
     // left: 0;
     // transform: translateY(100%);
@@ -14,6 +15,18 @@
     // background-color: var(--accent-background-color-90);
     // transition-duration: var(--transition-duration);
     // transition-timing-function: var(--transition-timing-function);
+    background-color: rgb(216, 131, 228);
+}
+
+.overlay-menu__tumb {
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .overlay-menu__desc {
