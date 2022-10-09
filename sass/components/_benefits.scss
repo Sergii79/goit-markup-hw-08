@@ -1,15 +1,18 @@
 /* benefits */
 
 .benefits {
+    // width: 100%;
     display: flex;   
     flex-wrap: wrap;
     padding-left: 0px;
     gap: 30px;
 }
 
-.benefits__item {    
+.benefits__item {   
+    width: 100%;
+
     // tablet - 768px
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         width: calc((100% - 30px)/2);            
     }
 
@@ -20,7 +23,7 @@
 }
 
 .benefits__box {
-    display: flex;
+    display: flex;   
     justify-content: center;
     align-items: center;    
     height: 120px;
