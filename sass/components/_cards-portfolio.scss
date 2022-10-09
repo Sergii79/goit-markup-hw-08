@@ -5,12 +5,24 @@
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
+    // flex-grow: 1;
 }
 
 .cards-portfolio__project {
-    flex-basis: calc(100% / 3 - 30px);
+    // flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
+    width: 100%;
+
+    // tablet - 768px
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - 30px);        
+    }
+
+    // desktop - 1200px
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 3 - 30px);        
+    }
 }
 
 .cards-portfolio__link {

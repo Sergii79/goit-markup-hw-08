@@ -29,15 +29,15 @@
           <a class="logo" href="./index.html">Web</span><span class="logo__black">Studio</span>            
           </a>
           <ul class="nav__list">
-            <li class="nav__item"
+            <li class="nav__item display-none-mob"
               ><a class="nav__link" href="./index.html">Студія</a></li
             >
-            <li class="nav__item"><a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a></li>
-            <li class="nav__item"><a class="nav__link" href="./contacts.html">Контакти</a></li>
+            <li class="nav__item display-none-mob"><a class="nav__link  nav__link--active" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav__item display-none-mob"><a class="nav__link" href="./contacts.html">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contacts">
-          <li class="contacts__item">
+          <li class="contacts__item display-none-mob">
             <a class="contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icons" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
@@ -45,7 +45,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item display-none-mob">
             <a class="contacts__link" href="tel:+380991111111">
               <svg class="contacts__icons" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
@@ -54,6 +54,13 @@
             >
           </li>
         </ul>
+        <button class="menu-button display-none-menu js-open-menu" type="button" 
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="menu-button__icon" width="40" height="40">
+                <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button> 
       </div>
     </header>
 
@@ -85,6 +92,7 @@
                 <div class="cards-portfolio__box">
                   <div class="cards-portfolio__tumb">
                     <img
+                      class="cards-portfolio__img"
                       src="./images/portfolio/portfolio1.jpg"
                       alt="portfolio1"
                       width="370"

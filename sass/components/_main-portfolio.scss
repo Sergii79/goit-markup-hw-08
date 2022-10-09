@@ -2,12 +2,25 @@
 
 .main-portfolio {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;    
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    // tablet - 768px
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    // desktop - 1200px
+    @media screen and (min-width: 1200px) {
+        justify-content: center;  
+        margin-bottom: 50px;
+    }
 }
 
 .main-portfolio__button {
+    // flex-wrap: calc((100% - 20px) / 2);
     border-radius: 4px;
     border: 0px;
     padding: 6px 22px;
