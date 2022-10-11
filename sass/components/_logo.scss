@@ -7,6 +7,14 @@
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
+
+    display: flex;
+    justify-content: center;
+
+    // desktop - 1200px
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
 }
 
 .logo__black {

@@ -1,26 +1,21 @@
 /* register-email */
 
 .register-email {
+    margin-top: 60px;
     display: flex;
     flex-direction: column;    
     align-items: center;
 
-    // tablet - 768px
-    @media screen and (min-width: 768px) {
-        flex-grow: 1;
-    }
-
     // desktop - 1200px
     @media screen and (min-width: 1200px) {
+        margin-top: 0;
         display: block;
         margin-left: 93px;        
     }
 }
 
 .register-email__title {
-    display: block;  
-    margin-top: 60px;  
-    margin-bottom: 20px;
+    display: block;      
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -34,7 +29,8 @@
     }
 }
 
-.register-email__box {    
+.register-email__box { 
+    margin-top: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -44,9 +40,6 @@
         flex-direction: column;
         justify-content: center;        
     }
-
-    // tablet - 768px
-    @media screen and (min-width: 768px) {}
 
     // desktop - 1200px
     @media screen and (min-width: 1200px) {        

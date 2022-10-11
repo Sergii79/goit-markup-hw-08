@@ -4,12 +4,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
-    margin-left: -30px;
-    // flex-grow: 1;
+    margin-left: -30px;    
 }
 
-.cards-portfolio__project {
-    // flex-basis: calc(100% / 3 - 30px);
+.cards-portfolio__project {    
     margin-top: 30px;
     margin-left: 30px;
     width: 100%;
@@ -27,6 +25,7 @@
 
 .cards-portfolio__link {
     text-decoration: none;
+    height: 100%;
 
     &:hover .cards-portfolio__box,
     &:focus .cards-portfolio__box {
@@ -40,6 +39,10 @@
 }
 
 .cards-portfolio__box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
     transition-property: box-shadow;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -47,6 +50,8 @@
 
 .cards-portfolio__box-title {
     padding: 20px 24px;
+    flex-grow: 1;
+
     border-bottom: 1px solid var(--list-project-color);
     border-right: 1px solid var(--list-project-color);
     border-left: 1px solid var(--list-project-color);
