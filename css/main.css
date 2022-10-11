@@ -1186,6 +1186,10 @@ ul {
   overflow: hidden;
 }
 
+.cards-portfolio__img {
+  width: 100%;
+}
+
 /* overlay-portfolio */
 .overlay-portfolio {
   position: absolute;
