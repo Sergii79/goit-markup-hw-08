@@ -20,12 +20,6 @@
   --modal-label-border-20: #21212133;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--main-background-color);
-  color: var(--basic-text-color);
-}
-
 /* visually-hidden */
 .visually-hidden {
   position: absolute;
@@ -113,6 +107,12 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-background-color);
+  color: var(--basic-text-color);
 }
 
 /* container */
